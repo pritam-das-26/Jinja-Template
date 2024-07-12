@@ -17,7 +17,7 @@
             </div>
             <div class="report-title">
                 <h1>AERIAL THERMOGRAPHIC INSPECTION REPORT</h1>
-                <h2>{{size of plant}}|{{location}} | {{Inspection date}}</h2>
+                <h2>{{size_of_plant}}|{{State}}, {{Country}}| {{inspection_date}}</h2>
             </div>
         </header>
         <body>
@@ -32,9 +32,9 @@
                         <th>Plant Size (in MWp)</th>
                     </tr>
                     <tr>
-                        <td>{{location}}</td>
-                        <td>{{plant area}}</td>
-                        <td>{{plant size}}</td>
+                        <td>{{State}}, {{Country}}</td>
+                        <td>{{plant_area}}</td>
+                        <td>{{size_of_plant}}</td>
                     </tr>
                 </table>
             </section>
@@ -48,8 +48,8 @@
                         <th>Payload</th>
                     </tr>
                     <tr>
-                        <td>{{UAV / Drone Type}}</td>
-                        <td>{{Controller used}}</td>
+                        <td>{{uav_dronetype}}</td>
+                        <td>{{controller_used}}</td>
                         <td>Radiometric IR</td>
                     </tr>
                 </table>
@@ -69,21 +69,21 @@
                         <th>Image Resolution</th>
                     </tr>
                     <tr>
-                        <td>{{dates of data acquisition}}</td>
-                        <td>{{cruise speed}}</td>
+                        <td>{{inspection_date}}</td>
+                        <td>{{cruise_speed}}</td>
                         <td>
-                            {{front overlap}}
+                            {{front_overlap}}
                         </td>
                         <td>
-                            {{side overlap}}
-                        </td>
-                        <td>90°</td>
-                        <td>
-                            {{flight Altitude}}
+                            {{side_overlap}}
                         </td>
                         <td>90°</td>
                         <td>
-                            {{image Resolution}}
+                            {{flight_altitude}}
+                        </td>
+                        <td>90°</td>
+                        <td>
+                            {{image_resolution}}
                         </td>
                     </tr>
                 </table>
@@ -93,23 +93,23 @@
                 <table>
                     <tr>
                         <th class="green-bg">Acquisition Date</th>
-                        <td>{{acquisition date}}</td>
+                        <td>{{inspection_date}}</td>
                     </tr>
                     <tr>
                         <th>Area Covered</th>  <!--this also have to change-->
-                        <td>{{area Covered}}</td>
+                        <td>{{plant_area}}</td>
                     </tr>
                     <tr>
                         <th>Irradiation</th>
-                        <td>{{Irradiation}}</td>
+                        <td>{{irradiance}}</td>
                     </tr>
                     <tr>
                         <th>Wind Speed</th>
-                        <td>{{Wind speed}}</td>
+                        <td>{{wind_speed}}</td>
                     </tr>
                     <tr>
                         <th>Acquisition Time</th>
-                        <td>{{Acquisition time}}</td>
+                        <td>{{acquisition_time}}</td>
                     </tr>
                     <tr>
                         <th>Weather</th>
@@ -117,11 +117,11 @@
                     </tr>
                     <tr>
                         <th>Ambient Temperature</th>
-                        <td>{{Ambient Temperature}}</td>
+                        <td>{{ambient_temperature}}</td>
                     </tr>
                     <tr>
                         <th>Plant Size Covered (approx.)</th>
-                        <td>{{plant size coveres}}</td>
+                        <td>{{size_of_plant}}</td>
                     </tr>
                 </table>
             </section>
